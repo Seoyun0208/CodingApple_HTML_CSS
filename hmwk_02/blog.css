@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 50px;
+  margin: auto;
+  border: 1px solid lightgrey;
+  width: 100%;
+  float: left;
+}
+
+.profile {
+  float: left;
+  width: 55%;
+  padding: 0px 30px 10px 30px;
+  margin: 10px;
+}
+
+.profile-img {
+  float: left;
+  width: 100px;
+}
+
+.content {
+  float: left;
+}
+
+.content h2,
+.content p {
+  padding: 5px;
+}
+
+.product-img {
+  float: right;
+  width: 43%;
+  padding: 30px;
+}
