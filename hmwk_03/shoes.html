@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>배경 위에 회색박스 겹치게 만들기</title>
+    <title>Contact Us 섹션 만들기</title>
     <link rel="stylesheet" href="shoes.css">
 </head>
 <body>
@@ -20,6 +20,28 @@
     <div class="box">
         <h4 class="text-title">How we design our shoes</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quisquam magnam atque aliquid, labore ducimus explicabo enim accusantium assumenda et at maiores repellat repellendus non nostrum odio placeat ipsam exercitationem!</p>
+    </div>
+    <div class="contact-background">
+        <div class="white-box">
+            <h4 class="contact-title">Contact Us</h4>
+            <div class="contact-sub-title">Your Email</div>
+            <input type="email" class="contact-sub-content" placeholder="email@example.com">
+            <div style="float: left; width: 45%;">
+                <div class="contact-sub-title">First name</div>
+                <input type="text" class="contact-sub-content">
+            </div>
+            <div style="float:right; width: 45%;">
+                <div class="contact-sub-title">Last name</div>
+                <input type="text" class="contact-sub-content">
+            </div>
+            <div style="clear: both"></div>
+            <div class="contact-sub-title">Message</div>
+            <textarea></textarea>
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe">Subscribe</label>
+            <button class="btn-contact">SEND</button>
+            <div style="clear: both"></div>
+        </div>
     </div>
 </body>
 </html>
