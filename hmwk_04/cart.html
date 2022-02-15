@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑 카트 레이아웃 만들기</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <h1>Your shopping cart</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">Item</th>
+                    <th>AMOUNT</th>
+                    <th>PRICE</th>
+                    <th>TOTAL</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2"><img src="./img/camera1.jpg"></td>
+                    <td class="brand">SONY</td>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">$153.00</td>
+                    <td rowspan="2" class="total">$153.00</td>
+                </tr>
+                <tr>
+                    <td class="model">FE 70-200mm F2.8 GM OSS</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="./img/camera2.jpg"></td>
+                    <td class="brand">SONY</td>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">$287.00</td>
+                    <td rowspan="2" class="total">$287.00</td>
+                </tr>
+                <tr>
+                    <td class="model">Sonnar T E 24mm F1.8 ZA</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="total">$440.00</td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="#">Edit your shopping cart</a>
+            <button>Choose payment method</button>
+        </div>
+    </div>
+</body>
+</html>

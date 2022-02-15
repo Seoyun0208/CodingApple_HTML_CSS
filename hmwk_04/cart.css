@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 50px;
+  background: rgb(154, 200, 207);
+  height: 800px;
+}
+
+.cart {
+  margin: auto;
+  width: 70%;
+  margin-top: 20px;
+}
+
+h1 {
+  padding: 30px 0;
+  color: rgb(76, 140, 150);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #eee;
+  border-radius: 10px;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 10px 15px;
+  border-bottom: 2px solid rgb(154, 200, 207);
+  text-align: center;
+}
+
+th {
+  color: rgb(76, 140, 150);
+  font-size: 18px;
+}
+
+img {
+  width: 200px;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.brand {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: none;
+  vertical-align: bottom;
+}
+
+.model {
+  color: rgb(76, 140, 150);
+  text-align: left;
+  vertical-align: top;
+}
+
+a {
+  float: left;
+  margin-top: 30px;
+  color: rgb(47, 92, 99);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  float: right;
+  margin-top: 20px;
+  padding: 20px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(47, 92, 99);
+  color: white;
+}
