@@ -66,6 +66,27 @@
   padding-bottom: 20px;
 }
 
+.icon-container {
+  float: left;
+  height: 230px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon h4 {
+  padding-top: 10px;
+}
+
+.icon p {
+  padding: 10px 0;
+}
+
 .contact-background {
   position: relative;
   width: 100%;
@@ -121,4 +142,28 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
   float: right;
+}
+
+@media screen and (max-width: 992px) {
+  .icon-container {
+    height: 450px;
+  }
+
+  .icon {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    margin-bottom: 50px;
+  }
+
+  .icon {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
