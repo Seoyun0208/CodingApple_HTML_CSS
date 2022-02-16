@@ -79,6 +79,16 @@
   text-align: center;
 }
 
+i {
+  font-size: 50px;
+  color: white;
+  background: burlywood;
+  border-radius: 70%;
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+}
+
 .icon h4 {
   padding-top: 10px;
 }
