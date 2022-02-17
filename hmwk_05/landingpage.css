@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* 상단: 메인 */
+.main-background {
+  background: linear-gradient(180deg, #499add, #4e61c0);
+  width: 100%;
+  padding: 30px 60px 0px 60px;
+}
+
+.main-container {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.main-text {
+  width: 70%;
+  vertical-align: center;
+  padding-top: 40px;
+  padding-right: 100px;
+}
+
+.main-text h4 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 15px 25px;
+  margin: 20px 0;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(77, 77, 77);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #499add;
+  transition: all 0.7s;
+  transform: scale(1.1);
+}
+
+.main-container img {
+  width: 30%;
+}
+
+/* 중앙: 서비스 */
+.service-background {
+  background: #4e61c0;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  padding: 20px;
+  width: 25%;
+}
+
+.service-container h4 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+i {
+  font-size: 50px;
+  background: white;
+  color: #4e61c0;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  padding-top: 20px;
+  margin: 10px;
+}
+
+/* 하단: 포트폴리오 */
+.portfolio-background {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.portfolio-container {
+  text-align: center;
+}
+
+.portfolio-container h6,
+h1 {
+  color: black;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 15px;
+  margin: auto;
+}
+
+.items {
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  text-align: left;
+  padding: 50px;
+}
+
+.items:hover {
+  transition: all 1s;
+  transform: scale(0.9);
+}
+
+.item1 {
+  background-image: url(./img/portfolio-3.jpg);
+}
+
+.item2 {
+  background-image: url(./img/portfolio-2.jpg);
+}
+
+.item3 {
+  padding-top: 230px;
+  background-image: url(./img/portfolio-4.jpg);
+}
+
+.item4 {
+  background-image: url(./img/portfolio-1.jpg);
+  padding-top: 230px;
+}
+
+@media screen and (max-width: 992px) {
+  /* 상단: 메인 */
+  .main-text {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .main-text h4 {
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+
+  .main-text p {
+    margin: 10px 0px;
+  }
+
+  .main-container img {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  /* 중앙: 서비스 */
+  .service-items {
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+  /* 하단: 포트폴리오 */
+  .portfolio-items {
+    flex-direction: column;
+  }
+
+  .items {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
