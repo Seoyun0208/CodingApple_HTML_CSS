@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video, Audio 다루기</title>
+    <link rel="stylesheet" href="video&audio.css">
+</head>
+<body>
+    <h1>VIDEO</h1>
+    <!-- video : 기본 형태 -->
+    <div class="container">
+        <h2>기본 형태</h2>
+        <video src="./video/bridge.mp4"></video>
+    </div>
+    <!-- video : 재생버튼 넣기 -->
+    <div class="container">
+        <h2>재생버튼 넣기</h2>
+        <p>controls 속성을 넣으면 재생버튼 생성</p>
+        <video src="./video/bridge.mp4" controls></video>
+    </div>
+    <!-- video : 더 나은 형태 -->
+    <div class="container">
+        <h2>더 나은 형태</h2>
+        <p>
+            video 태그에 src 를 넣는 것보다 source 태그에 src 를 넣는 게 더 호환성에 있어서 좋음<br>
+            source 태그를 사용할 때에는 type 도 넣어주는 걸 추천!<br>
+            첫 번째 source 태그의 영상이 안 나올 것을 대비하여 두 번째 source 태그를 추가하여 다른 확장자의 영상이 재생되도록 할 수 있음
+        </p>
+        <video controls>
+            <source src="./video/bridge.mp4" type="video/mp4">
+            <source src="./video/bridge_m.webm" type="video/mp4">
+        </video>
+    </div>
+    <!-- video : 자동재생 설정 -->
+    <div class="container">
+        <h2>자동재생 설정</h2>
+        <p>
+            autoplay 속성을 넣으면 자동재생 설정 가능<br>
+            chrome 브라우저는 추가로 muted 속성도 넣어주어야 제대로 자동재생이 동작함 (접근성 문제때문인듯..?)
+        </p>
+        <video controls autoplay muted>
+            <source src="./video/bridge.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- video : preload 설정 -->
+    <div class="container">
+        <h2>preload 설정</h2>
+        <p>
+            미리 다운로드받을지 여부는 preload 속성을 통해 설정 가능<br>
+            preload="none" 이라면 미리 다운이 되지 않음<br>
+            preload="auto" 이라면 미리 다운이 됨<br>
+            preload="metadata" 이라면 적당히 미리 다운이 됨<br>
+        </p>
+        <video controls preload="none">
+            <source src="./video/bridge.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- video : 썸네일 설정 -->
+    <div class="container">
+        <h2>썸네일 설정</h2>
+        <p>poster 속성을 통해 설정 가능</p>
+        <video controls poster="./img/thumbnail.png">
+            <source src="./video/bridge.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- video : 무한반복재생 설정 -->
+    <div class="container">
+        <h2>무한반복재생 설정</h2>
+        <p>loop 속성을 통해 설정 가능</p>
+        <video controls loop autoplay muted>
+            <source src="./video/bridge.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <h1>AUDIO</h1>
+    <!-- audio : 기본 형태 -->
+    <div class="container">
+        <h2>기본 형태 및 재생버튼 넣기</h2>
+        <p>기본 형태에서 controls 속성을 넣어주어야 정상적으로 나옴</p>
+        <audio src="./audio/bass.mp3" controls></audio>
+    </div>
+    <!-- audio : 음소거 설정 -->
+    <div class="container">
+        <h2>음소거 설정</h2>
+        <p>muted 속성을 추가하면 음소거 상태가 기본으로 설정됨</p>
+        <audio src="./audio/bass.mp3" controls muted></audio>
+    </div>
+    <!-- audio : 자동재생 설정 -->
+    <div class="container">
+        <h2>자동재생 설정: 불가</h2>
+        <p>autoplay 속성이 있지만 audio 에서는 적용 되지 않음</p>
+        <audio src="./audio/bass.mp3" controls muted autoplay></audio>
+    </div>
+    <!-- audio : preload 설정 -->
+    <div class="container">
+        <h2>preload 설정</h2>
+        <p>
+            미리 다운로드받을지 여부는 preload 속성을 통해 설정 가능<br>
+            preload="none" 이라면 미리 다운이 되지 않음<br>
+            preload="auto" 이라면 미리 다운이 됨<br>
+            preload="metadata" 이라면 적당히 미리 다운이 됨<br>
+        </p>
+        <audio src="./audio/bass.mp3" controls preload="none"></audio>
+    </div>
+    <!-- audio : 더 나은 형태 -->
+    <div class="container">
+        <h2>더 나은 형태</h2>
+        <p>audio 도  video 처럼 source 태그에 src 넣는 게 가능</p>
+        <audio controls>
+            <source src="./audio/bass.mp3" >
+        </audio>
+    </div>
+</body>
+</html>
