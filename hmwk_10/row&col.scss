@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  @mixin col($width) {
+    border: 1px solid lightgrey;
+    float: left;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    width: $width;
+  }
+
+  .col-6 {
+    @include col(50%);
+  }
+
+  .col-4 {
+    @include col(33.33%);
+  }
+}
