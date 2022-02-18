@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alert-box-yellow, .alert-box-blue, .alert-box-green {
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.alert-box-green {
+  border: 1.5px solid #63ec63;
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.alert-box-blue {
+  border: 1.5px solid #72c9e6;
+  background: lightblue;
+  color: darkblue;
+}
+
+.alert-box-yellow {
+  border: 1.5px solid #f1f189;
+  background: lightgoldenrodyellow;
+  color: darkgoldenrod;
+}/*# sourceMappingURL=alertbox.css.map */

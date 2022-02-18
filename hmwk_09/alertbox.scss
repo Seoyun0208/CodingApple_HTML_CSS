@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+%alert-box {
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.alert-box-green {
+  @extend %alert-box;
+  border: 1.5px solid rgb(99, 236, 99);
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.alert-box-blue {
+  @extend %alert-box;
+  border: 1.5px solid rgb(114, 201, 230);
+  background: lightblue;
+  color: darkblue;
+}
+
+.alert-box-yellow {
+  @extend %alert-box;
+  border: 1.5px solid rgb(241, 241, 137);
+  background: lightgoldenrodyellow;
+  color: darkgoldenrod;
+}
