@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sh-list {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list li:hover {
+  cursor: pointer;
+}
+.sh-list .active {
+  background: skyblue;
+  color: white;
+}/*# sourceMappingURL=list.css.map */
