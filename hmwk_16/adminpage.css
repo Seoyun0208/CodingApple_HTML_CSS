@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 좌측 : 사이드바 */
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  background: #484bb3;
+  position: fixed;
+  z-index: 5;
+  color: white;
+
+  transition: all 0.5s;
+  transform: translateX(-100px);
+}
+
+.sidebar:hover {
+  transform: translateX(0px);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.sidebar:hover div {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateX(50px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.sidebar i {
+  transition: all 0.5s;
+  transform: translateX(100px);
+}
+
+.sidebar:hover i {
+  transform: translateX(0px);
+}
+
+.sidebar div {
+  margin: 12px 0px 0px 15px;
+}
+
+/* 상단 : Navbar */
+.content {
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.navbar {
+  box-shadow: 1.5px 1.5px 2px 2px #eee;
+}
+.nav-link {
+  position: relative;
+}
+
+.nav-link i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.nav-link .badge {
+  position: absolute;
+  top: 0px;
+  left: 18px;
+}
+
+#input-ani {
+  width: 200px;
+  transition: width 1s;
+}
+
+#input-ani:focus {
+  width: 400px;
+}
+
+/* 중앙 : Dashboard */
+.blue {
+  border-left: 5px solid skyblue;
+}
+
+.green {
+  border-left: 5px solid lightgreen;
+}
+
+.purple {
+  border-left: 5px solid blueviolet;
+}
+
+.yellow {
+  border-left: 5px solid gold;
+}
+
+.card p,
+.card h4,
+.card .card-header {
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+}
+
+.card i {
+  color: grey;
+}
+
+.card {
+  box-shadow: 1.5px 1.5px 2px 2px #eee;
+  margin: 5px 0;
+}
+
+/* 하단 : Chart */
+.task {
+  border-top: 1px solid rgb(216, 216, 216);
+  padding: 12px 24px;
+}
+
+.task .badge {
+  float: right;
+}
