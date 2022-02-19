@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  height: 2000px;
+}
+
+.grey {
+  height: 1600px;
+  margin-top: 400px;
+}
+
+.image {
+  float: right;
+  width: 600px;
+  position: sticky;
+  top: 400px;
+}
+
+.text {
+  margin-bottom: 200px;
+  float: left;
+  width: 600px;
+}
