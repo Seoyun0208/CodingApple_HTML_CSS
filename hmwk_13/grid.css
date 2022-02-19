@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* grid : 1 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px; /* fr 은 전체 너비에 대한 비율을 의미 */
+  grid-template-rows: 100px 100px 100px;
+  /* grid-gap: 10px; */ /* grid-gap 은 각 grid 사이의 간격을 의미 */
+}
+
+.grid-container div {
+  border: 1px solid black;
+}
+
+.grid-nav {
+  grid-column: 1 / 5; /* display: grid 자식들에만 사용가능한 속성, 각 숫자는 세로줄 순번을 의미 */
+  grid-row: 1 / 2; /* display: grid 자식들에만 사용가능한 속성, 각 숫자는 가로줄 순번을 의미 */
+}
+
+.grid-sidebar {
+  grid-row: 2 / 4;
+}
+
+.grid {
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+}
+
+/* grid : 2 */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas:
+    "헤더 헤더 헤더 헤더"
+    "사이드 그리드 그리드 그리드"
+    "사이드 그리드 그리드 그리드";
+}
+
+.grid-container2 div {
+  border: 1px solid black;
+}
+
+.grid-nav2 {
+  grid-area: 헤더;
+}
+
+.grid-sidebar2 {
+  grid-area: 사이드;
+}
+
+.grid2 {
+  grid-area: 그리드;
+}
